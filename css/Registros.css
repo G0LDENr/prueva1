@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+header{
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+background: #91f384;
+}
+
+header div div h2{
+    color: #ffffff;
+}
+
+/*HEADER SUPERIOR*/
+
+.header__superior{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.product-card .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #91f384;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.search input{
+    width: 300px;
+    padding: 10px;
+}
+
+/* BARRA MENU */
+
+.container__menu{
+    width: 100%;
+    height: 70px;
+    background: #91f384;
+    padding: 0px 20px;
+}
+
+.menu{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+}
+
+nav > ul{
+    height: 100%;
+    display: flex;
+}
+
+nav ul li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+
+}
+
+nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+
+}
+
+nav > ul > li > a:hover{
+    transform: scale(1.1);
+    background: black;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+}
+
+#selected{
+    transform: scale(1.1);
+    background-color: black;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+/* SUBMENU */
+
+nav ul li ul{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 90px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+
+nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+
+nav ul li ul:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    position: absolute;
+    top: -11px;
+    left: 50px;
+}
+
+nav ul li ul li a{
+    display: block;
+    color: black;
+    padding: 6px;
+    margin-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+nav ul li ul li a:hover{
+    background: black;
+    color: #ffffff;
+    transform: scale(1.2);
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+}
+
+header>div>h2{
+align-items: center;
+}
+
+/* ARTICULO */
+
+main{
+    background: #e0d8d2;
+    padding: 40px 20px;
+    margin-top: 194px;
+}
+
+article{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 40px;
+    background: #f0f0f0;
+}
+
+article p{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* ELEMENTOS RESPONSIVOS */
+
+.icon__menu{
+    font-size: 26px;
+    color: #fff;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+
+#label__check{
+    width: 26px;
+    height: 100%;
+    display: none;
+}
+
+#check__menu{
+    display: none;
+}
+
+@media screen and (max-width: 720px){
+
+    .search inpit{
+        display: none;
+    }
+
+    .header__superior{
+        padding: 10px;
+    }
+
+    .logo img{
+        width: 200px;
+    }
+
+    nav > ul{
+        flex-direction: column;
+        background-color: gray;
+        position: fixed;
+        left: 0;
+        top: 158px;
+        width: 100px;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav > ul > li > a:hover{
+        transform: scale(1);
+    }
+
+    nav ul li ul{
+        left: 90px;
+    }
+
+    nav > ul > li:hover ul{
+        top: 50px;
+    }
+
+    nav > ul > li:first-child a{
+        background-position: 20px;
+    }
+
+    #selected{
+        transform: scale(1);
+    }
+
+    #label__check{
+        display: block;
+    }
+
+    .icon__menu{
+        display: flex;
+    }
+
+    #check__menu:checked ~ nav > ul{
+        height: 300px;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+div > img{
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.tablaR{
+    padding: 4px;
+}
+
+.disCo{
+    border-color: #bf8963;
+}
+
+/* Estilo para las imágenes dentro de las celdas de la tabla */
+.table img {
+    width: 20px;  /* Ajusta el tamaño según necesites */
+    height: 20px;  /* Ajusta el tamaño según necesites */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+}
+
+/* Opcional: Añadir padding a las celdas para que las imágenes se vean centradas */
+.table td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+article h2 {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre el título y el botón */
+    align-items: center;
+}
+
+.boton-imagen {
+    width: 30px; /* Ajusta el tamaño del botón según necesites */
+    height: 30px; /* Ajusta el tamaño del botón según necesites */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+    transition: transform 0.3s; /* Agrega una transición suave al pasar el ratón */
+}
+
+.boton-imagen:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón al pasar el ratón */
+}

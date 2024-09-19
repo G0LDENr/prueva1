@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../css/Registro_Alu.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="image-container">
+        <img src="../img/Avatar_Usuario.png" alt="Imagen descriptiva">
+    </div>
+
+    <div class="register-container">
+        <h2>Regístrate</h2>
+        <form action="../php/Alta_Alumno.php" method="POST">
+            
+            <input type="file" name="Foto" placeholder="Foto" required>
+
+            <input type="text" name="Nombre" placeholder="Nombre Completo" required>
+
+            <input type="date" name="Fecha_N" placeholder="Fecha de Nacimiento" required>
+
+            <input type="submit" name="Registrar" value="OK">
+        </form>
+        <p><a href="../index.php">Cancelar</a></p>
+    </div>
+</div>
+</body>
+</html>

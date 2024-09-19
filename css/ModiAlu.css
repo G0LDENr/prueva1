@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('../imgP/LogoEDUTVT.jpg'); /* Reemplaza con tu imagen de fondo */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 720px; /* Ancho combinado de la imagen y el formulario */
+}
+
+.image-container {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.register-container {
+    width: 50%;
+    padding-left: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="file"], input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #91f384;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0ea001;
+}
+
+.register-container p {
+    margin: 20px 0 0;
+    color: #555;
+}
+
+.register-container a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
+}
+
+div > p{
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgba(255, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
